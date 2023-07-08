@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
 
     public void Player1Scored()
     {
+        Debug.Log("Player 1 Scored at time: " + Time.time);
         Player1Score++;
         Player1Text.GetComponent<TextMeshProUGUI>().text = Player1Score.ToString();
         ResetPosition();
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
 
     public void Player2Scored()
     {
+        Debug.Log("Player 2 Scored at time: " + Time.time);
         Player2Score++;
         Player2Text.GetComponent<TextMeshProUGUI>().text = Player2Score.ToString();
         ResetPosition();
@@ -40,7 +42,6 @@ public class GameManager : MonoBehaviour
     private void ResetPosition()
     {
         ball.GetComponent<Ball>().Reset();
-        player1Paddle.GetComponent<Paddle>().Reset();
-        player2Paddle.GetComponent<Paddle>().Reset();
+        
     }
 }

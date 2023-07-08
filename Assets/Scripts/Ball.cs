@@ -16,11 +16,12 @@ public class Ball : MonoBehaviour
         Launch();
     }
     //public void reset function
+    //added Invoke to call the launch function after 0.5 second delay, hopefully fixing the accidental double OnTrigger due to the ball beig inside the goal collider when it gets its new velocity from launch
     public void Reset()
     {
         rb.velocity = Vector2.zero;
         transform.position = startPosition;
-        Launch();
+        Invoke("Launch", 0.5f);
     }
 
     // Update is called once per frame

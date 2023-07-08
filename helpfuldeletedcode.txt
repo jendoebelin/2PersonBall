@@ -1,0 +1,4 @@
+reset player paddles to start position
+
+player1Paddle.GetComponent<Paddle>().Reset();
+player2Paddle.GetComponent<Paddle>().Reset();
