@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public GameObject Player1Text;
     public GameObject Player2Text;
 
+
+
     public int Player1Score = 0;
     public int Player2Score = 0;
 
