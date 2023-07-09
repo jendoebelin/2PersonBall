@@ -8,6 +8,9 @@ public class Paddle : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     public Vector3 startPosition;
+    public AudioSource src;
+    public AudioClip paddle;
+    
 
     private float movement;
 
@@ -35,5 +38,14 @@ public class Paddle : MonoBehaviour
     {
         rb.velocity = Vector2.zero;
         transform.position = startPosition;
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Ball")
+        { 
+            src.clip = paddle;
+            src.Play();
+        }
     }
 }

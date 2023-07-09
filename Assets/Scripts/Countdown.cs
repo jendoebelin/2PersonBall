@@ -38,7 +38,7 @@ public class Countdown : MonoBehaviour
         src.clip = bong;
         src.Play();
 
-        //ball.Start();
+    
         ball.Launch();
 
         yield return new WaitForSeconds(1f);

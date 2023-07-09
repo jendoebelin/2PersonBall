@@ -261,7 +261,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -419,6 +419,8 @@ MonoBehaviour:
   speed: 5
   rb: {fileID: 443651342}
   startPosition: {x: 0, y: 0, z: 0}
+  src: {fileID: 96156096}
+  paddle: {fileID: 8300000, guid: 592e8f1e919e811489242b48d6d4d003, type: 3}
 --- !u!61 &443651344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -896,6 +898,8 @@ MonoBehaviour:
   Player2Text: {fileID: 1991320013}
   Player1Score: 0
   Player2Score: 0
+  src: {fileID: 96156096}
+  clip: {fileID: 8300000, guid: a510e6489e92b494b83056b3deacb775, type: 3}
 --- !u!1 &1071879223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,6 +1485,8 @@ MonoBehaviour:
   speed: 5
   rb: {fileID: 1975756681}
   startPosition: {x: 0, y: 0, z: 0}
+  src: {fileID: 96156096}
+  paddle: {fileID: 8300000, guid: 592e8f1e919e811489242b48d6d4d003, type: 3}
 --- !u!61 &1975756683
 BoxCollider2D:
   m_ObjectHideFlags: 0

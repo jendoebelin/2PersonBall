@@ -23,10 +23,16 @@ public class GameManager : MonoBehaviour
     public int Player1Score = 0;
     public int Player2Score = 0;
 
+    public AudioSource src;
+    public AudioClip clip;
+
     public void Player1Scored()
     {
         Debug.Log("Player 1 Scored at time: " + Time.time);
         Player1Score++;
+        src.clip = clip;
+        src.Play();
+
         Player1Text.GetComponent<TextMeshProUGUI>().text = Player1Score.ToString();
         ResetPosition();
     }
@@ -35,6 +41,9 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Player 2 Scored at time: " + Time.time);
         Player2Score++;
+        src.clip = clip;
+        src.Play();
+
         Player2Text.GetComponent<TextMeshProUGUI>().text = Player2Score.ToString();
         ResetPosition();
     }
