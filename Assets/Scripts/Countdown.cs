@@ -17,6 +17,7 @@ public class Countdown : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         StartCoroutine(CountdownToStart());
     }
 
