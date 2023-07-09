@@ -9,14 +9,15 @@ public class Ball : MonoBehaviour
     public float speed;
     public Vector3 startPosition;
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
         startPosition = transform.position;
-        Launch();
+        
     }
-    //public void reset function
-    //added Invoke to call the launch function after 0.5 second delay, hopefully fixing the accidental double OnTrigger due to the ball beig inside the goal collider when it gets its new velocity from launch
+
+
+    
     public void Reset()
     {
         rb.velocity = Vector2.zero;
@@ -30,7 +31,7 @@ public class Ball : MonoBehaviour
         
     }
 
-    private void Launch()
+    public void Launch()
     {
         float x = Random.Range(0, 2) == 0 ? -1 : 1;
         float y = Random.Range(0, 2) == 0 ? -1 : 1;
