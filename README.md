@@ -1,5 +1,6 @@
 # 2PersonBall
-![image](https://github.com/jendoebelin/2PersonBall/assets/119360121/a232f625-99af-4916-bea3-3b8611458f40)
+[![Watch the video](https://img.youtube.com/vi/6I7aphV4snk/maxresdefault.jpg)](https://youtu.be/6I7aphV4snk)
+
 
 Player 1 Controls: Up = W Down = S
 Joystick 1: Up = Joy0 Down = Joy1
