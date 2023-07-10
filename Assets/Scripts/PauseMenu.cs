@@ -31,4 +31,9 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("WinnerScene");
+    }
 }

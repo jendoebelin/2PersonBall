@@ -14,6 +14,8 @@ public class Countdown : MonoBehaviour
     public int check;
     public AudioSource src;
     public AudioClip bing, bong;
+    public AudioSource bg;
+    public AudioClip track;
 
     private void Start()
     {
@@ -41,6 +43,9 @@ public class Countdown : MonoBehaviour
 
     
         ball.Launch();
+
+        bg.clip = track;
+        bg.Play();
 
         yield return new WaitForSeconds(1f);
 
